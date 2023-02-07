@@ -1,5 +1,6 @@
 import {FC} from 'react';
 import {TextInput} from 'react-native';
+import styles from './styles';
 
 interface IField {
   onChange: (val: string) => void;
@@ -11,6 +12,7 @@ interface IField {
 const Field: FC<IField> = ({onChange, val, placeholder, isSecure}) => {
   return (
     <TextInput
+      style={styles.root}
       placeholder={placeholder}
       onChangeText={onChange}
       value={val}

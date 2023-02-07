@@ -9,7 +9,6 @@ export default StyleSheet.create({
   },
   content: {
     width: '75%',
-    backgroundColor: 'red',
   },
   title: {
     fontSize: 24,
