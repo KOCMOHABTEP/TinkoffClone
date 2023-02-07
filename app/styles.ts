@@ -10,3 +10,8 @@ export const BOX_SHADOW: ViewStyle = {
   shadowRadius: 10,
   elevation: 5,
 };
+
+export const UI_GREY_100 = 'rgb(243 244 246)';
+export const UI_GREY_800 = 'rgb(31 41 55)';
+
+export const UI_YELLOW_300 = 'rgb(253 224 71)';

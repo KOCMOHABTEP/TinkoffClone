@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {UI_GREY_800} from '../../../styles';
 export default StyleSheet.create({
   container: {
     height: '100%',
@@ -16,5 +17,11 @@ export default StyleSheet.create({
     textAlign: 'center',
     color: '#333',
     marginBottom: 8,
+  },
+  pressableButton: {
+    color: UI_GREY_800,
+    fontSize: 14,
+    opacity: 0.3,
+    textAlign: 'right',
   },
 });
