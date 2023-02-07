@@ -12,6 +12,7 @@ export const BOX_SHADOW: ViewStyle = {
 };
 
 export const UI_GREY_100 = 'rgb(243 244 246)';
+export const UI_GREY_200 = 'rgb(229 231 235)';
 export const UI_GREY_300 = 'rgb(209 213 219)';
 export const UI_GREY_800 = 'rgb(31 41 55)';
 

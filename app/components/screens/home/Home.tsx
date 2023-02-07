@@ -5,10 +5,10 @@ import {Layout} from '../../layout/Layout';
 
 const Home: FC = () => {
   return (
-    <View>
+    <Layout>
       <Header />
       <Text>Home</Text>
-    </View>
+    </Layout>
   );
 };
 

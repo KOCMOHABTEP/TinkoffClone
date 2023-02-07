@@ -2,20 +2,12 @@ import {StyleSheet} from 'react-native';
 import {UI_GREY_800} from '../../../styles';
 
 export default StyleSheet.create({
-  root: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  pressable: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  label: {
+  text: {
     fontSize: 24,
-    color: UI_GREY_800,
     fontWeight: 'bold',
-  },
-  icon: {
     color: UI_GREY_800,
+  },
+  textCenter: {
+    textAlign: 'center',
   },
 });
