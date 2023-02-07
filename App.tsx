@@ -7,7 +7,7 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 export default function App() {
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}>
+      <SafeAreaView style={{flex: 1}}>
         <AuthProvider>
           <Navigation />
         </AuthProvider>

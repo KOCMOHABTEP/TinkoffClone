@@ -1,6 +1,6 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {NavigationContainer} from '@react-navigation/native';
+import {DefaultTheme, NavigationContainer} from '@react-navigation/native';
 import {useAuth} from '../hooks/useAuth';
 import Auth from '../components/screens/auth/Auth';
 import Home from '../components/screens/home/Home';
@@ -12,12 +12,19 @@ import More from '../components/screens/more/More';
 
 const Stack = createNativeStackNavigator();
 
+const navigationTheme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    background: '#FFF',
+  },
+};
+
 const Navigation = () => {
   const {user} = useAuth();
-  console.log(user);
 
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={navigationTheme}>
       <Stack.Navigator screenOptions={{headerShown: false}}>
         {user ? (
           <>

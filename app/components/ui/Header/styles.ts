@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {UI_GREY_800} from '../../../styles';
 
 export default StyleSheet.create({
   root: {
@@ -8,6 +9,14 @@ export default StyleSheet.create({
   },
   pressable: {
     flexDirection: 'row',
-    alignItems: 'flex-end',
+    alignItems: 'center',
+  },
+  label: {
+    fontSize: 24,
+    color: UI_GREY_800,
+    fontWeight: 'bold',
+  },
+  icon: {
+    color: UI_GREY_800,
   },
 });
