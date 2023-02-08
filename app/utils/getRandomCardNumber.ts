@@ -5,7 +5,7 @@ export const getRandomCardNumber = () => {
     const random4DigitNumber = Math.floor(1000 + Math.random() * 9000);
 
     if (i !== 4) {
-      cardNumber += '';
+      cardNumber += ' ';
     }
 
     cardNumber += random4DigitNumber;

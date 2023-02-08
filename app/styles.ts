@@ -21,3 +21,4 @@ export const UI_YELLOW_300 = 'rgb(253 224 71)';
 export const UI_GREEN_500 = 'rgb(34 197 94)';
 
 export const UI_BLUE_400 = 'rgb(96 165 250)';
+export const UI_BLUE_500 = 'rgb(59 130 246)';
