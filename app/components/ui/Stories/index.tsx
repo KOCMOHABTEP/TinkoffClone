@@ -6,6 +6,7 @@ import {useStories} from '../../../hooks/useStories';
 
 const Stories = () => {
   const {stories, isLoading} = useStories();
+  console.log('Stories =>>>', stories);
 
   return (
     <View style={styles.container}>

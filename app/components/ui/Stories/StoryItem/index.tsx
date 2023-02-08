@@ -2,10 +2,13 @@ import {View, Text, Pressable, ImageBackground} from 'react-native';
 import {IStory} from '../types';
 import {FC} from 'react';
 import styles from './styles';
+import {useData} from '../../../../hooks/useData';
 
 const StoryItem: FC<{story: IStory}> = ({story}) => {
+  const {setActiveStories} = useData();
+
   return (
-    <Pressable onPress={() => {}}>
+    <Pressable onPress={() => setActiveStories(story.images)}>
       <View style={styles.container}>
         <ImageBackground
           source={{uri: story.images[0]}}
