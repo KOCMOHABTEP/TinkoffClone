@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {Text, View} from 'react-native';
+import {Text} from 'react-native';
 import {useProfile} from '../../../hooks/useProfile';
 import {Layout} from '../../layout/Layout';
 import Heading from '../../ui/Heading';
@@ -9,22 +9,31 @@ import Field from '../../ui/Field';
 import {Button} from '../../ui/Button';
 import {useAuth} from '../../../hooks/useAuth';
 import {UI_GREY_200} from '../../../styles';
+import {useUpdateProfile} from '../../../hooks/useUpdateProfile';
+import {Notification} from '../../ui/Notification';
 
 const Profile: FC = () => {
   const {logout} = useAuth();
-  const {isLoading: isProfileLoading, name, setName} = useProfile();
+  const {isLoading: isProfileLoading, name, setName, profile} = useProfile();
+
+  const {
+    isLoading: isProfileUpdateLoading,
+    isSuccess,
+    updateProfile,
+  } = useUpdateProfile(name, profile.docId);
 
   return (
     <Layout>
       <Heading text={'Profile'} isCenter={true} />
       <Padding>
-        {isProfileLoading ? (
+        {isSuccess && <Notification text={'Profile updated successfully'} />}
+        {isProfileLoading || isProfileUpdateLoading ? (
           <Loader />
         ) : (
           <>
             <Field onChange={setName} val={name} placeholder={'No name'} />
 
-            <Button onPress={() => {}} title={'Update profile'} />
+            <Button onPress={updateProfile} title={'Update profile'} />
 
             <Button
               onPress={logout}
@@ -34,7 +43,6 @@ const Profile: FC = () => {
           </>
         )}
       </Padding>
-      <Text>Profile</Text>
     </Layout>
   );
 };
