@@ -1,12 +1,12 @@
 import {useEffect, useState} from 'react';
 
-import {collection, onSnapshot, orderBy, query} from 'firebase/firestore';
+import {collection, onSnapshot, query} from 'firebase/firestore';
 import {db} from '../firebase';
-import {IStory} from '../components/ui/Stories/types';
+import {IStory} from '../types/IStory';
 
 export const useStories = () => {
   const [stories, setStories] = useState<IStory[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(
     () =>
@@ -20,6 +20,8 @@ export const useStories = () => {
               } as IStory),
           ),
         );
+
+        setIsLoading(false);
       }),
     [],
   );

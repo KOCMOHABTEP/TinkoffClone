@@ -1,8 +1,9 @@
 import {View, Text, Pressable, ImageBackground} from 'react-native';
-import {IStory} from '../types';
+
 import {FC} from 'react';
 import styles from './styles';
 import {useData} from '../../../../hooks/useData';
+import {IStory} from '../../../../types/IStory';
 
 const StoryItem: FC<{story: IStory}> = ({story}) => {
   const {setActiveStories} = useData();
