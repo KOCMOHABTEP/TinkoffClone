@@ -13,9 +13,18 @@ const Accounts = () => {
       {isLoading ? (
         <Loader />
       ) : accounts.length ? (
-        accounts.map(account => (
+        accounts.map((account, idx) => (
           <Fragment key={account._id}>
             <AccountItem account={account} />
+            {idx + 1 !== accounts.length && (
+              <View
+                style={{
+                  borderBottomColor: '#E0E1E2',
+                  borderBottomWidth: 1,
+                  marginBottom: 24,
+                }}
+              />
+            )}
           </Fragment>
         ))
       ) : (
