@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {UI_BLUE_500} from '../../../../styles';
+import {UI_BLUE_500} from '../../../../../styles';
 
 export default StyleSheet.create({
   container: {

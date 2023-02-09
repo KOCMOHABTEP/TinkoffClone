@@ -2,8 +2,8 @@ import React, {FC} from 'react';
 import Header from '../../ui/Header';
 import {Layout} from '../../layout/Layout';
 import Stories from '../../ui/Stories';
-import Accounts from '../../ui/Accounts';
-import ApplyNewProducts from './apply-new-products/ApplyNewProducts';
+import Accounts from './Accounts';
+import Index from './ApplyNewProducts';
 
 const Home: FC = () => {
   return (
@@ -11,7 +11,7 @@ const Home: FC = () => {
       <Header />
       <Stories />
       <Accounts />
-      <ApplyNewProducts />
+      <Index />
     </Layout>
   );
 };

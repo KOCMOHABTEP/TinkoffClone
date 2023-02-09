@@ -1,12 +1,12 @@
 import {ImageBackground, ImageSourcePropType, Text, View} from 'react-native';
 import {FC} from 'react';
-import {IAccount} from '../../../../types/IAccount';
+import {IAccount} from '../../../../../types/IAccount';
 import styles from './styles';
 import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
 
 const AccountItem: FC<{account: IAccount}> = ({account}) => {
-  const imageTinkoffBlack: ImageSourcePropType = require('./../../../../../assets/cards/tinkoff-black.png');
-  const imageTinkoffAirlines: ImageSourcePropType = require('./../../../../../assets/cards/tinkoff-airlines.png');
+  const imageTinkoffBlack: ImageSourcePropType = require('../../../../../../assets/cards/tinkoff-black.png');
+  const imageTinkoffAirlines: ImageSourcePropType = require('../../../../../../assets/cards/tinkoff-airlines.png');
 
   return (
     <View style={styles.container}>

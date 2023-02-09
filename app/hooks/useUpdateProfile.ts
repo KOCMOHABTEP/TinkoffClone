@@ -29,7 +29,7 @@ export const useUpdateProfile = (name: string, docId: string) => {
       setTimeout(() => {
         setIsLoading;
       }, 3000);
-    } catch (error) {
+    } catch (error: any) {
       Alert.alert('Error update profile', error.message);
     } finally {
       setIsLoading(false);

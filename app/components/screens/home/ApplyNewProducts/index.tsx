@@ -1,4 +1,4 @@
-import {Alert, Text, View} from 'react-native';
+import {Alert} from 'react-native';
 import Padding from '../../../ui/Padding';
 import styles from './styles';
 import {Button} from '../../../ui/Button';

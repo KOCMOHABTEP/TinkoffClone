@@ -1,7 +1,7 @@
 import {Text, View} from 'react-native';
-import {useAccounts} from '../../../hooks/useAccounts';
-import Padding from '../Padding';
-import Loader from '../Loader';
+import {useAccounts} from '../../../../hooks/useAccounts';
+import Padding from '../../../ui/Padding';
+import Loader from '../../../ui/Loader';
 import {Fragment} from 'react';
 import AccountItem from './AccountItem';
 
