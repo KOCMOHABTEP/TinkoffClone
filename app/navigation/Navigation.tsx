@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {
   DefaultTheme,
@@ -29,6 +29,27 @@ const Navigation = () => {
   const {user} = useAuth();
   const ref = useNavigationContainerRef();
 
+  const [name, setName] = useState<string | undefined>(undefined);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(
+      () => setName(ref.getCurrentRoute()?.name),
+      100,
+    );
+
+    return () => clearTimeout(timeoutId);
+  });
+
+  useEffect(() => {
+    const listener = ref.addListener('state', () =>
+      setName(ref.getCurrentRoute()?.name),
+    );
+
+    return () => {
+      ref.removeListener('state', listener);
+    };
+  }, []);
+
   return (
     <>
       <NavigationContainer ref={ref} theme={navigationTheme}>
@@ -47,7 +68,7 @@ const Navigation = () => {
           )}
         </Stack.Navigator>
       </NavigationContainer>
-      {user && <Footer navigate={ref.navigate} />}
+      {user && name && <Footer navigate={ref.navigate} currentRoute={name} />}
     </>
   );
 };

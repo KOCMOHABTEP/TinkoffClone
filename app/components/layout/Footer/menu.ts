@@ -2,27 +2,23 @@ import {IFooterItem} from './types';
 
 export const menu: IFooterItem[] = [
   {
-    iconName: 'c',
+    iconName: 'credit-card',
     title: 'Home',
   },
   {
-    iconName: 'pay-circle1',
+    iconName: 'bitcoin',
     title: 'Payments',
   },
   {
-    iconName: 'switcher',
+    iconName: 'wallet',
     title: 'Services',
   },
   {
-    iconName: 'message1',
+    iconName: 'info-circle',
     title: 'Support',
   },
   {
-    iconName: 'ellipsis1',
-    title: 'Support',
-  },
-  {
-    iconName: 'ellipsis1',
+    iconName: 'angle-double-right',
     title: 'More',
   },
 ];

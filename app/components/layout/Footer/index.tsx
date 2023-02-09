@@ -7,13 +7,19 @@ import {FC} from 'react';
 
 interface IFooter {
   navigate: (screenName: keyof TypeRootStackParamList) => void;
+  currentRoute: string;
 }
 
-const Footer: FC<IFooter> = ({navigate}) => {
+const Footer: FC<IFooter> = ({navigate, currentRoute}) => {
   return (
     <Padding style={styles.container}>
       {menu.map(item => (
-        <FooterNavItem key={item.title} item={item} navigate={navigate} />
+        <FooterNavItem
+          key={item.title}
+          item={item}
+          navigate={navigate}
+          currentRoute={currentRoute}
+        />
       ))}
     </Padding>
   );

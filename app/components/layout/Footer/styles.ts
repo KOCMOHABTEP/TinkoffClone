@@ -4,8 +4,7 @@ import {UI_GREY_100} from '../../../styles';
 export default StyleSheet.create({
   container: {
     width: '100%',
-    paddingTop: 8,
-    paddingBottom: 20,
+    paddingVertical: 16,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',

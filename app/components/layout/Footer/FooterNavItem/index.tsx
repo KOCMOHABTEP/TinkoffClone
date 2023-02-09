@@ -8,10 +8,11 @@ import {TypeRootStackParamList} from '../../../../navigation/types';
 interface IFooterNavItem {
   item: IFooterItem;
   navigate: (screenName: keyof TypeRootStackParamList) => void;
+  currentRoute: string;
 }
 
-const FooterNavItem: FC<IFooterNavItem> = ({item, navigate}) => {
-  const isActive = true;
+const FooterNavItem: FC<IFooterNavItem> = ({item, navigate, currentRoute}) => {
+  const isActive = currentRoute === item.title;
 
   return (
     <Pressable style={styles.container} onPress={() => navigate(item.title)}>
@@ -19,7 +20,9 @@ const FooterNavItem: FC<IFooterNavItem> = ({item, navigate}) => {
         name={item.iconName}
         style={[styles.icon, isActive && styles.iconActive]}
       />
-      <Text style={styles.label}>{item.title}</Text>
+      <Text style={[styles.label, isActive && styles.labelActive]}>
+        {item.title}
+      </Text>
     </Pressable>
   );
 };
