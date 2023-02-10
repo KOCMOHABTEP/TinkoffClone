@@ -11,7 +11,7 @@ const Header: FC = () => {
       />
       <View>
         <Text style={styles.title}>Support</Text>
-        <Text style={styles.subtitle}>We are there 24/7</Text>
+        <Text style={styles.subtitle}>We are here 24/7</Text>
       </View>
     </View>
   );

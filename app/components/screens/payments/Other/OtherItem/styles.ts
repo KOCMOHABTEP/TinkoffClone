@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {UI_BLUE_500} from '../../../../../styles';
+import {BOX_SHADOW, UI_BLUE_500} from '../../../../../styles';
 
 export default StyleSheet.create({
   container: {
@@ -9,14 +9,7 @@ export default StyleSheet.create({
     width: 96,
     height: 96,
     backgroundColor: '#FFFFFF',
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 3,
-    },
-    shadowOpacity: 0.15,
-    shadowRadius: 4,
-    elevation: 6,
+    ...BOX_SHADOW,
   },
   icon: {
     width: 24,
