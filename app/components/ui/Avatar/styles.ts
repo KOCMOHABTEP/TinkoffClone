@@ -7,7 +7,6 @@ export default StyleSheet.create({
     backgroundColor: UI_GREY_300,
     width: 48,
     height: 48,
-    marginRight: 12,
     alignItems: 'center',
     justifyContent: 'center',
   },

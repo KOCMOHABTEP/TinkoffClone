@@ -2,12 +2,7 @@ import {collection, limit, onSnapshot, query, where} from 'firebase/firestore';
 import {useEffect, useMemo, useState} from 'react';
 import {useAuth} from './useAuth';
 import {db} from '../firebase';
-
-interface IProfile {
-  _id: string;
-  displayName: string;
-  docId: string;
-}
+import {IProfile} from '../types/IProfile';
 
 export const useProfile = () => {
   const {user} = useAuth();

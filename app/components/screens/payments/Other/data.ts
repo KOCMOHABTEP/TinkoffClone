@@ -2,23 +2,23 @@ import {IOtherItem} from './types';
 
 export const otherItems: IOtherItem[] = [
   {
-    iconName: '',
+    iconName: 'mobile',
     title: 'Mobile',
   },
   {
-    iconName: '',
+    iconName: 'house-user',
     title: 'Housing',
   },
   {
-    iconName: '',
+    iconName: 'wifi',
     title: 'Internet',
   },
   {
-    iconName: '',
+    iconName: 'tv',
     title: 'TV',
   },
   {
-    iconName: '',
+    iconName: 'car',
     title: 'Transport',
   },
 ];

@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import {Text, View} from 'react-native';
+import {Text} from 'react-native';
 import styles from './styles';
 import Padding from '../Padding';
 

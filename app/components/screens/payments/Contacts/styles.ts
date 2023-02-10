@@ -1,10 +1,8 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-  container: {
-    marginVertical: 32,
-  },
+  container: {},
   scrollView: {
-    paddingVertical: 20,
+    paddingVertical: 12,
   },
 });
