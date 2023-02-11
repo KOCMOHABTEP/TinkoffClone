@@ -3,7 +3,7 @@ import Header from '../../ui/Header';
 import {Layout} from '../../layout/Layout';
 import Stories from '../../ui/Stories';
 import Accounts from './Accounts';
-import Index from './ApplyNewProducts';
+import ApplyNewProducts from './ApplyNewProducts';
 
 const Home: FC = () => {
   return (
@@ -11,7 +11,7 @@ const Home: FC = () => {
       <Header />
       <Stories />
       <Accounts />
-      <Index />
+      <ApplyNewProducts />
     </Layout>
   );
 };

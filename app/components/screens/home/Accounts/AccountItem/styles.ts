@@ -3,7 +3,7 @@ import {UI_BLUE_500} from '../../../../../styles';
 
 export default StyleSheet.create({
   container: {
-    marginBottom: 28,
+    marginBottom: 24,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',

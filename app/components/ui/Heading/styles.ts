@@ -6,6 +6,7 @@ export default StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     color: UI_GREY_800,
+    marginBottom: 16,
   },
   textCenter: {
     textAlign: 'center',

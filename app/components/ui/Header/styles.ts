@@ -14,8 +14,10 @@ export default StyleSheet.create({
     fontSize: 24,
     color: UI_GREY_800,
     fontWeight: 'bold',
+    marginLeft: 16,
   },
   icon: {
     color: UI_GREY_800,
+    marginLeft: 12,
   },
 });

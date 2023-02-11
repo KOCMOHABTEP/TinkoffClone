@@ -7,7 +7,6 @@ export default StyleSheet.create({
     height: 96,
     padding: 2,
     marginLeft: 16,
-    marginBottom: 28,
     borderRadius: 16,
     borderWidth: 1,
     borderColor: UI_BLUE_400,

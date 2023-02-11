@@ -21,8 +21,6 @@ const Support: FC = () => {
         </ScrollView>
         <InputField />
       </Padding>
-
-      <Text>Support</Text>
     </Layout>
   );
 };

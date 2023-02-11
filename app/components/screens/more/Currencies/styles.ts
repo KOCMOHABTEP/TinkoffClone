@@ -3,7 +3,6 @@ import {BOX_SHADOW, UI_GREY_400, UI_GREY_800} from '../../../../styles';
 
 export default StyleSheet.create({
   container: {
-    marginTop: 20,
     flexDirection: 'row',
     borderRadius: 24,
     backgroundColor: '#FFF',

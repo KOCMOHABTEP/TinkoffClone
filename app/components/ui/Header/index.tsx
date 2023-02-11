@@ -16,18 +16,12 @@ const Header: FC = () => {
     <Loader />
   ) : (
     <Padding style={styles.root}>
-      <Avatar name={'Dima'} />
-
       <TouchableOpacity
         onPress={() => navigate('Profile')}
         style={styles.pressable}>
+        <Avatar name={'Dima'} />
         <Text style={styles.label}>Dima</Text>
-        <FontAwesome5Icon
-          style={styles.icon}
-          name="chevron-right"
-          size={20}
-          light
-        />
+        <FontAwesome5Icon style={styles.icon} name="chevron-right" size={16} />
       </TouchableOpacity>
     </Padding>
   );

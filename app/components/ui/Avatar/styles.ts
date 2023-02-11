@@ -3,10 +3,10 @@ import {UI_GREY_300} from '../../../styles';
 
 export default StyleSheet.create({
   root: {
-    borderRadius: 9999,
-    backgroundColor: UI_GREY_300,
     width: 48,
     height: 48,
+    borderRadius: 9999,
+    backgroundColor: UI_GREY_300,
     alignItems: 'center',
     justifyContent: 'center',
   },

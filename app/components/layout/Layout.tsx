@@ -1,5 +1,5 @@
 import React, {FC, ReactNode} from 'react';
-import {ScrollView, Text, View} from 'react-native';
+import {SafeAreaView, ScrollView, View} from 'react-native';
 import styles from './styles';
 
 interface ILayout {
@@ -9,8 +9,10 @@ interface ILayout {
 
 export const Layout: FC<ILayout> = ({children, isScrollView = true}) => {
   return (
-    <View style={styles.container}>
-      {isScrollView ? <ScrollView>{children}</ScrollView> : children}
-    </View>
+    <SafeAreaView>
+      <View style={styles.container}>
+        {isScrollView ? <ScrollView>{children}</ScrollView> : children}
+      </View>
+    </SafeAreaView>
   );
 };

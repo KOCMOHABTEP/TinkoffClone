@@ -10,8 +10,8 @@ import Currencies from './Currencies';
 const More: FC = () => {
   return (
     <Layout>
-      <Heading text={'More'} />
       <Padding>
+        <Heading text={'More'} />
         <Currencies />
         <Menu />
         <Text style={styles.versionText}>Version 5.20.6</Text>
