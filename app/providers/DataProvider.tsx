@@ -17,7 +17,6 @@ export const DataContext = createContext<IContext>({} as IContext);
 
 export const DataProvider: FC<PropsWithChildren> = ({children}) => {
   const [activeStories, setActiveStories] = useState<string[] | null>(null);
-  console.log('DataProvider >>>>', activeStories);
 
   const value = useMemo(
     () => ({
